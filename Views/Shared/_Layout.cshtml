@@ -6,6 +6,10 @@
     <title>@ViewData["Title"] - The Wine Rack</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/regular.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -37,6 +41,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Vineyards" asp-action="Index">Vineyards</a>
                         </li>
                     </ul>
+                    <partial name="_LoginPartial.cshtml" />
                 </div>
             </div>
         </nav>
