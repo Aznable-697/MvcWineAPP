@@ -21,12 +21,12 @@ namespace MvcWineAPP.Data
 
         var wines = new Wine[]
         {
-            new Wine{WineID= 1, WineName="Ghost Pines",WineVintage=2018, PairsWith = "Pairs well with Beer, Lamb, Deer, Venison, Poultry."},
-            new Wine{WineID= 2, WineName="Example Wine2",WineVintage=2008, PairsWith = "Pairs well with Beer, Poultry."},
-            new Wine{WineID= 3, WineName="Example Wine3",WineVintage=2007, PairsWith = "Pairs well with Lamb, Venison, Poultry."},
-            new Wine{WineID= 4, WineName="Example Wine4",WineVintage=2006, PairsWith = "Pairs well with Beer, Lamb, Deer, Venison, Poultry."},
-            new Wine{WineID= 5, WineName="Example Wine5",WineVintage=2012, PairsWith = "Pairs well with Beer, Lamb, Deer."},
-            new Wine{WineID= 6, WineName="Example Wine6",WineVintage=2014, PairsWith = "Pairs well with Poultry."},
+            new Wine{WineID= 1, WineName="Ghost Pines",WineVintage=2018,WineTypes= " ",  PairsWith = "Pairs well with Beer, Lamb, Deer, Venison, Poultry."},
+            new Wine{WineID= 2, WineName="Example Wine2",WineVintage=2008,WineTypes= " ", PairsWith = "Pairs well with Beer, Poultry."},
+            new Wine{WineID= 3, WineName="Example Wine3",WineVintage=2007,WineTypes= " ", PairsWith = "Pairs well with Lamb, Venison, Poultry."},
+            new Wine{WineID= 4, WineName="Example Wine4",WineVintage=2006,WineTypes= " ", PairsWith = "Pairs well with Beer, Lamb, Deer, Venison, Poultry."},
+            new Wine{WineID= 5, WineName="Example Wine5",WineVintage=2012,WineTypes= " ", PairsWith = "Pairs well with Beer, Lamb, Deer."},
+            new Wine{WineID= 6, WineName="Example Wine6",WineVintage=2014,WineTypes= " ",PairsWith = "Pairs well with Poultry."},
 
         };
         foreach (Wine s in wines)

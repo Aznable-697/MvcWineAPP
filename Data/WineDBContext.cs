@@ -14,13 +14,13 @@ namespace MvcWineAPP.Data
         }
 
         public DbSet<Grape> Grapes { get; set; }
-        public DbSet<WineType> WineType { get; set; }
+        public DbSet<Cellar> Cellar { get; set; }
         public DbSet<Wine> Wines { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Grape>().ToTable("Grape");
-            modelBuilder.Entity<WineType>().ToTable("WineTypes");
+            modelBuilder.Entity<Cellar>().ToTable("Cellar");
             modelBuilder.Entity<Wine>().ToTable("Wine");
             
         }

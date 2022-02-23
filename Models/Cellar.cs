@@ -9,9 +9,9 @@ namespace MvcWineAPP.Models
     {
         A, B, C, D, F
     }
-    public class WineType
+    public class Cellar
     {
-        public int WineTypeID { get; set; }
+        public int CellarID { get; set; }
         public int WineID { get; set; }
         public int GrapesID { get; set; }
 
