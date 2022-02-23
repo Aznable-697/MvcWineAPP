@@ -20,7 +20,7 @@ namespace MvcWineAPP.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Grape>().ToTable("Grape");
-            modelBuilder.Entity<WineType>().ToTable("WineType");
+            modelBuilder.Entity<WineType>().ToTable("WineTypes");
             modelBuilder.Entity<Wine>().ToTable("Wine");
             
         }

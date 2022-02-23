@@ -11,9 +11,9 @@ namespace MvcWineAPP.Models
         public string WineName { get; set; }
         public int WineVintage { get; set; }
         public string PairsWith { get; set; }       
-        
+        public string WineTypes { get; set; }
 
-        public ICollection<WineType> WineType { get; set; }
+       // public ICollection<WineType> WineType { get; set; }
 
     }
 }

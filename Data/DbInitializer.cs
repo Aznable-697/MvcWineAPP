@@ -51,24 +51,24 @@ namespace MvcWineAPP.Data
         }
         context.SaveChanges();
 
-        var winetype = new WineType[]
-        {
-            new WineType{WineID=1,GrapesID=1001,Grade=Grade.A},
-            new WineType{WineID=2,GrapesID=1002,Grade=Grade.A},
-            new WineType{WineID=4,GrapesID=1003,Grade=Grade.A},
-            new WineType{WineID=3,GrapesID=1004,Grade=Grade.A},
-            new WineType{WineID=5,GrapesID=1005,Grade=Grade.A},
-            new WineType{WineID=6,GrapesID=1006,Grade=Grade.A},
-            new WineType{WineID=1,GrapesID=1001,Grade=Grade.A},
-            new WineType{WineID=1,GrapesID=1001,Grade=Grade.A},
-            new WineType{WineID=1,GrapesID=1001,Grade=Grade.A},
+        //var winetype = new WineType[]
+        //{
+        //    new WineType{WineID=1,GrapesID=1001,Grade=Grade.A},
+        //    new WineType{WineID=2,GrapesID=1002,Grade=Grade.A},
+        //    new WineType{WineID=4,GrapesID=1003,Grade=Grade.A},
+        //    new WineType{WineID=3,GrapesID=1004,Grade=Grade.A},
+        //    new WineType{WineID=5,GrapesID=1005,Grade=Grade.A},
+        //    new WineType{WineID=6,GrapesID=1006,Grade=Grade.A},
+        //    new WineType{WineID=1,GrapesID=1001,Grade=Grade.A},
+        //    new WineType{WineID=1,GrapesID=1001,Grade=Grade.A},
+        //    new WineType{WineID=1,GrapesID=1001,Grade=Grade.A},
 
-        };
-        foreach (WineType e in winetype)
-        {
-            context.WineType.Add(e);
-        }
-        context.SaveChanges();
+        //};
+        //foreach (WineType e in winetype)
+        //{
+        //    context.WineType.Add(e);
+        //}
+        //context.SaveChanges();
     }
 }
 }

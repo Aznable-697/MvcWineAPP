@@ -14,6 +14,6 @@ namespace MvcWineAPP.Models
         public string RedGrape { get; set; }
         public int Rating { get; set; }
 
-        public ICollection<WineType> WineType { get; set; }
+      //  public ICollection<WineType> WineType { get; set; }
     }
 }

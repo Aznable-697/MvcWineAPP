@@ -23,9 +23,44 @@
                 <span asp-validation-for="WineVintage" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="WineType" class="control-label"></label>
-                <input asp-for="WineType" class="form-control" />
-                <span asp-validation-for="WineType" class="text-danger"></span>
+                <label asp-for="WineTypes" class="control-label"></label>
+                <select asp-for="WineTypes" class="form-control">
+
+                    <option>Cabernet Sauvignon</option>
+                    <option>Merlot</option>
+                    <option>Pinot Noir</option>
+                    <option>Malbec</option>
+                    <option>Zinfandel</option>
+                    <option>Riesling</option>
+                    <option>Chardonnay</option>
+                    <option>Sauvignon Blanc</option>
+                    <option>Pinot Grigio</option>
+                    <option>Muscat</option>
+                    <option>Gewurztraminer</option>
+                    <option>Viognier</option>
+                    <option>Chenin Blanc</option>
+                    <option>Semillon</option>
+                    <option>Alberino</option>
+                    <option>Roterveltliner</option>
+                    <option>Pinot Blanc</option>
+                    <option>Torrontes</option>
+                    <option>Marsanne</option>
+                    <option>Muller-Thurgau</option>
+                    <option>Trebbiano</option>
+                    <option>Silvaner</option>
+                    <option>Muscadet</option>
+                    <option>Roussane</option>
+                    <option>Malvasia</option>
+                    <option>Garganega</option>
+                    <option>Verdiconio</option>
+                    <option>Airen</option>
+                    <option>Verdelho</option>
+                    <option>Rose</option>
+                    <option>Ice</option>
+                    <option>Port</option>
+
+                </select>
+                <span asp-validation-for="WineTypes" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PairsWith" class="control-label"></label>
