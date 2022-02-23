@@ -1,0 +1,53 @@
+﻿@model IEnumerable<MvcWineAPP.Models.Wine>
+
+@{
+    ViewData["Title"] = "Add a Wine";
+}
+
+<h1>Add a New Wine</h1>
+
+<p>
+    <a asp-action="Create">Add New Wine Here</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.WineName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WineVintage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WineType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PairsWith)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.WineName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WineVintage)
+            </td>
+            <th>
+                @Html.DisplayNameFor(model => model.WineType)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.PairsWith)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.WineID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.WineID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.WineID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
