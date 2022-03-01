@@ -56,7 +56,7 @@ namespace MvcWineAPP.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("WineID,WineName,WineVintage,WineType,PairsWith")] Wine wine)
+        public async Task<IActionResult> Create([Bind("Vineyard,WineID,WineName,WineVintage,WineTypes,PairsWith,DateAdded")] Wine wine)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace MvcWineAPP.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("WineID,WineName,WineVintage,WineType,PairsWith")] Wine wine)
+        public async Task<IActionResult> Edit(int id, [Bind("Vineyard,WineID,WineName,WineVintage,WineTypes,PairsWith,DateAdded")] Wine wine)
         {
             if (id != wine.WineID)
             {

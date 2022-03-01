@@ -21,12 +21,12 @@ namespace MvcWineAPP.Data
 
         var wines = new Wine[]
         {
-            new Wine{WineID= 1, WineName="Ghost Pines",WineVintage=2018,WineTypes= " ",  PairsWith = "Pairs well with Beer, Lamb, Deer, Venison, Poultry."},
-            new Wine{WineID= 2, WineName="Example Wine2",WineVintage=2008,WineTypes= " ", PairsWith = "Pairs well with Beer, Poultry."},
-            new Wine{WineID= 3, WineName="Example Wine3",WineVintage=2007,WineTypes= " ", PairsWith = "Pairs well with Lamb, Venison, Poultry."},
-            new Wine{WineID= 4, WineName="Example Wine4",WineVintage=2006,WineTypes= " ", PairsWith = "Pairs well with Beer, Lamb, Deer, Venison, Poultry."},
-            new Wine{WineID= 5, WineName="Example Wine5",WineVintage=2012,WineTypes= " ", PairsWith = "Pairs well with Beer, Lamb, Deer."},
-            new Wine{WineID= 6, WineName="Example Wine6",WineVintage=2014,WineTypes= " ",PairsWith = "Pairs well with Poultry."},
+            new Wine{WineID= 1, WineName="Ghost Pines",WineVintage=2018,WineTypes= "Cabernt Sauvignon",  PairsWith = "Pairs well with Beer, Lamb, Deer, Venison, Poultry."},
+            new Wine{WineID= 2, WineName="Example Wine2",WineVintage=2008,WineTypes= "Merlot", PairsWith = "Pairs well with Beer, Poultry."},
+            new Wine{WineID= 3, WineName="Example Wine3",WineVintage=2007,WineTypes= "Pinot Noir", PairsWith = "Pairs well with Lamb, Venison, Poultry."},
+            new Wine{WineID= 4, WineName="Example Wine4",WineVintage=2006,WineTypes= "Malbec", PairsWith = "Pairs well with Beer, Lamb, Deer, Venison, Poultry."},
+            new Wine{WineID= 5, WineName="Example Wine5",WineVintage=2012,WineTypes= "Zinfandel", PairsWith = "Pairs well with Beer, Lamb, Deer."},
+            new Wine{WineID= 6, WineName="Example Wine6",WineVintage=2014,WineTypes= "Sangiovese",PairsWith = "Pairs well with Poultry."},
 
         };
         foreach (Wine s in wines)
@@ -35,21 +35,21 @@ namespace MvcWineAPP.Data
         }
         context.SaveChanges();
 
-        var grapes = new Grape[]
-        {
-            new Grape{GrapeID=1001,RedGrape="Cabernet Sauvignon ",Rating=7},
-            new Grape{GrapeID=1002,RedGrape="Merlot",Rating=6},
-            new Grape{GrapeID=1003,RedGrape="Pinot Noir",Rating=5},
-            new Grape{GrapeID=1004,RedGrape=" Malbec",Rating=8},
-            new Grape{GrapeID=1005,RedGrape="Zinfandel",Rating=9},
-            new Grape{GrapeID=1006,RedGrape="Sangiovese",Rating=6},
+        //var grapes = new Grape[]
+        //{
+        //    new Grape{GrapeID=1001,RedGrape="Cabernet Sauvignon ",Rating=7},
+        //    new Grape{GrapeID=1002,RedGrape="Merlot",Rating=6},
+        //    new Grape{GrapeID=1003,RedGrape="Pinot Noir",Rating=5},
+        //    new Grape{GrapeID=1004,RedGrape=" Malbec",Rating=8},
+        //    new Grape{GrapeID=1005,RedGrape="Zinfandel",Rating=9},
+        //    new Grape{GrapeID=1006,RedGrape="Sangiovese",Rating=6},
 
-        };
-        foreach (Grape c in grapes)
-        {
-            context.Grapes.Add(c);
-        }
-        context.SaveChanges();
+        //};
+        //foreach (Grape c in grapes)
+        //{
+        //    context.Grapes.Add(c);
+        //}
+        //context.SaveChanges();
 
         //var winetype = new WineType[]
         //{

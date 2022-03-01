@@ -13,6 +13,9 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.Vineyard)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.WineName)
             </th>
             <th>
@@ -24,6 +27,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.PairsWith)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateAdded)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -31,16 +37,22 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+                @Html.DisplayFor(modelItem => item.Vineyard)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.WineName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.WineVintage)
             </td>
             <th>
-                @Html.DisplayNameFor(model => model.WineTypes)
+                @Html.DisplayFor(modelItem => item.WineTypes)
             </th>
             <td>
                 @Html.DisplayFor(modelItem => item.PairsWith)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateAdded)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.WineID">Edit</a> |
