@@ -53,6 +53,6 @@ Now is when we will want to check in SQL Server Object Explorer for the updated 
 Thank you for taking time for look over my project! I look forward to continuing to work on this as time goes on and fixing/Adding reworking different issues when I find I have More time..
   
   </ul><br>
-<strong> &#9734; This project made possible by becuase of my loving wife.&hearts;&hearts;<br> Without her I would have never ventured into coding to begin with.</strong>
+<strong> &#9734; This project made possible becuase of my loving wife.&hearts;&hearts;<br> Without her I would have never ventured into coding to begin with<br> & Jeff. For pushing me in the right direction and always encouraging me to carry on.</strong>
 <ul>
   
